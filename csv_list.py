@@ -10,6 +10,16 @@ reader = csv.reader(file_read)
 data_list = list(reader)
 print("Ok!")
 
+
+# Imprimindo as primeiras 20 linhas usando um loop para identificar os dados.
+print("\n\nTAREFA 1: Imprimindo as primeiras 20 amostras")
+
+#Precisamos remover o cabeçalho
+data_list = data_list[1:21]
+print(data_list)
+
+input("Aperte Enter para continuar...")
+
 #Criar uma função para adicionar as colunas de uma lista em outra lista, na mesma ordem
 def column_to_list(data, index):
 column_list = []
