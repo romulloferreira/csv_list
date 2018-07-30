@@ -22,10 +22,11 @@ input("Aperte Enter para continuar...")
 
 #Criar uma função para adicionar as colunas de uma lista em outra lista, na mesma ordem
 def column_to_list(data, index):
-column_list = []
-for genero in data_list:
+    column_list = []
+    for genero in data_list:
 
-column_list.append(genero[6])
+    column_list.append(genero[6])
+    return column_list
 print("\nTAREFA 3: Imprimindo a lista de gêneros das primeiras 20 amostras")
 print(column_to_list(data_list, -2)[:20])
 
